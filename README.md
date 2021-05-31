@@ -7,9 +7,9 @@
 
 <br>
 
-![Screenshot GreasyFork](./img/babla1.jpg)
+![Screenshot](./img/babla1.jpg)
 
-![Screenshot GreasyFork](./img/babla2.png)
+![Screenshot](./img/babla2.png)
 
 ## License
 [CC-BY-SA-4.0](https://github.com/pabli24/bab.la-dark/blob/main/LICENSE)
