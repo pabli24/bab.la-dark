@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bab.la - Dark Theme
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    Dark Theme for bab.la online dictionary
 @author         Pabli
 @homepageURL    https://github.com/pabli24/bab.la-dark
@@ -28,7 +28,7 @@ body, body.languages .image-stage, body.languages .intro-stage {
 	background-color: #111;
 	color: #eee;
 }
-.content {
+.content, .trendingWords .text, .trendingWords li {
 	background-color: #1f1f1f;
 }
 .action-wrapper,
@@ -43,7 +43,11 @@ body.action-links-open .action-panel-form-language-switch:after {
 	color: #eee;
 	background-color: #252525;
 }
-.dict-select-column ul li a:hover, .dict-select-column ul li a:active, .dict-select-column li:not(.bab-custom-dictsub):hover, .dict-select-column li:not(.bab-custom-dictsub):active {
+.dict-select-column ul li:hover a, 
+.dict-select-column ul li:active a, 
+.dict-select-column li:not(.bab-custom-dictsub):hover, 
+.dict-select-column li:not(.bab-custom-dictsub):active,
+.tt-suggestion:hover, .tt-cursor {
 	background-color: #333;
 }
 .dict-select-column ul li a.more.collapsed {
@@ -96,7 +100,8 @@ a,
 body.languages .dropdown-header,
 body.corporate .dropdown-header,
 .content-list .content-item-calltoaction,
-.content-list .content-item>a:hover .content-item-header, .collocs a.colloc-link {
+.content-list .content-item>a:hover .content-item-header, .collocs a.colloc-link,
+.trendingWords .trendingWord {
 	color: #6fb8ec;
 }
 a:hover, a:focus,
@@ -243,13 +248,16 @@ button, input, optgroup, select, textarea {
 .select2-container--default .select2-selection--single .select2-selection__rendered {
 	color: #eee;
 }
-.select2-container--default .select2-results__option[aria-selected="true"] {
+.select2-container--default .select2-results__option[aria-selected="true"],
+.commonVerbs-closed, .commonVerbs-closed .commonVerbs-button {
 	background-color: #252525;
 }
-    
+.commonVerbs-button {
+	color: #6fb8ec;
+	background-color: #1f1f1f;
+}
 #topslot_container,
 .info-wrapper>div {
 	display: none;
 }
-
 }
