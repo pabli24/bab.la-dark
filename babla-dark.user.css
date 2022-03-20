@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bab.la - Dark Theme
 @namespace      github.com/openstyles/stylus
-@version        1.0.3
+@version        1.0.4
 @description    Dark Theme for bab.la online dictionary
 @author         Pabli
 @homepageURL    https://github.com/pabli24/bab.la-dark
@@ -9,6 +9,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("bab.la") {
+:root {
+	color-scheme: dark;
+}
 body.languages .navbar, body.languages .site-switch-toggle,
 body.corporate .navbar, body.corporate .site-switch-toggle {
 	background-color: #0d0d0d;
