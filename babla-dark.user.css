@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bab.la - Dark Theme
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.1.0
 @description    Dark Theme for bab.la online dictionary
 @author         Pabli
 @homepageURL    https://github.com/pabli24/bab.la-dark
@@ -12,6 +12,11 @@
 :root {
 	color-scheme: dark;
 }
+.home .search-box-submit a {
+	background-color: #444;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+	color: #fff;
+}
 body.languages .navbar, body.languages .site-switch-toggle,
 body.corporate .navbar, body.corporate .site-switch-toggle {
 	background-color: #0d0d0d;
@@ -21,12 +26,21 @@ body.corporate .navbar, body.corporate .site-switch-toggle {
 	color: #eee;
 	background-color: rgba(255, 255, 255, 0.1)
 }
-.action-wrapper .logo-flash {
+.action-wrapper .logo-flash, .navbar-brand .babla-logo {
 	background: transparent url(https://static.bab.la/img/babla-logo-white.svg) no-repeat left center scroll;
+}
+#firstHeaderBar .navbar-header .material-icons {
+	color: #eee;
+}
+#firstHeaderBar a:hover .material-icons {
+	color: rgba(255, 255, 255, .7);
 }
 body, body.languages .image-stage, body.languages .intro-stage {
 	background-color: #111;
 	color: #eee;
+}
+.home #firstHeaderBar .navbar-header, #firstHeaderBar .navbar-header {
+	background-color: #1f1f1f;
 }
 .content, .trendingWords .text, .trendingWords li {
 	background-color: #1f1f1f;
@@ -57,6 +71,9 @@ body.action-links-open .action-panel-form-language-switch:after {
 	border-right: 1px solid #333;
 	border-left: 1px solid #333;
 }
+.home .action-panel-form .action-panel-form-item-input {
+	border: 2px solid #333;
+}
 @media screen and (max-width: 740px) {
 .action-panel-form-item-input {
 	border-bottom: 1px solid #333;
@@ -72,7 +89,7 @@ a.action-panel-form-submit,
 .dict-switch-help p {
 	color: #aaa;
 }
-.action-panel-form a:hover, .action-panel-form-sm a:hover {
+.action-panel-form a:hover, .action-panel-form-sm a:hover, .action-panel-form .action-links-toggle:hover, .action-panel-form .swapLanguage:hover, .action-panel-form-sm .action-links-toggle:hover, .action-panel-form-sm .swapLanguage:hover, .swapLanguage:hover {
 	color: #ccc;
 }
 body.languages .section-label,
@@ -90,7 +107,7 @@ body.languages .section-label:after {
 .quick-result-entry .toc-links a,
 .quick-result-entry .toc-links a:after,
 .material-icons[style*="color:#0077CC;"],
-.dict-entry .dict-example .dict-source .icon-link {
+.dict-entry .dict-example .dict-source .icon-link, .dict-entry .dict-example .mono-examples .icon-link:hover, .dict-entry .dict-example .mono-examples .icon-link:focus, .dict-entry .dict-example .mono-examples .icon-link {
 	color: #6fb8ec !important;
 }
 a, 
@@ -211,6 +228,14 @@ a.icon-link:hover, a.icon-link:focus {
 	color: #ccc;
 }
 
+.navigation #navItems .tab {
+	color: #eee;
+	background: #323232;
+	border-right: 1px solid #444;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: rgba(255, 255, 255, .1);
+}
 .content-list .content-item-teaser-img {
 	border: 1px solid #333;
 	background: #333 no-repeat center center scroll;
