@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bab.la - Dark Theme
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.1.1
 @description    Dark Theme for bab.la online dictionary
 @author         Pabli
 @homepageURL    https://github.com/pabli24/bab.la-dark
@@ -39,10 +39,21 @@ body, body.languages .image-stage, body.languages .intro-stage {
 	background-color: #111;
 	color: #eee;
 }
+.lexico_entry {
+	color: #eee;
+	border-color: #333;
+}
+.lexico_sentences:before {
+	color: #ccc;
+	border-bottom: solid 1px #333;
+}
+.lexico_posgroup {
+	color: #ccc;
+}
 .home #firstHeaderBar .navbar-header, #firstHeaderBar .navbar-header {
 	background-color: #1f1f1f;
 }
-.content, .trendingWords .text, .trendingWords li {
+.content, .trendingWords .text, .trendingWords li, #translator-header .translator-header-container, #translator-header:after {
 	background-color: #1f1f1f;
 }
 .action-wrapper,
@@ -56,6 +67,9 @@ body.action-links-open .action-panel-form-language-switch:after {
 .dict-select-column ul li a, .dict-select-column li:not(.bab-custom-dictsub) {
 	color: #eee;
 	background-color: #252525;
+}
+#translator-header:after {
+	border-color: #111;
 }
 .dict-select-column ul li:hover a, 
 .dict-select-column ul li:active a, 
@@ -118,7 +132,7 @@ body.languages .dropdown-header,
 body.corporate .dropdown-header,
 .content-list .content-item-calltoaction,
 .content-list .content-item>a:hover .content-item-header, .collocs a.colloc-link,
-.trendingWords .trendingWord {
+.trendingWords .trendingWord, .lexico_trans {
 	color: #6fb8ec;
 }
 a:hover, a:focus,
