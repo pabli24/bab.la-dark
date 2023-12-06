@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           bab.la - Dark Theme
 @namespace      github.com/openstyles/stylus
-@version        1.1.1
+@version        1.1.2
 @description    Dark Theme for bab.la online dictionary
 @author         Pabli
 @homepageURL    https://github.com/pabli24/bab.la-dark
@@ -87,6 +87,9 @@ body.action-links-open .action-panel-form-language-switch:after {
 }
 .home .action-panel-form .action-panel-form-item-input {
 	border: 2px solid #333;
+}
+.did-you-mean li a {
+	background-color: #252525;
 }
 @media screen and (max-width: 740px) {
 .action-panel-form-item-input {
@@ -298,5 +301,15 @@ button, input, optgroup, select, textarea {
 #topslot_container,
 .info-wrapper>div {
 	display: none;
+}
+
+.dict-pag a.dict-pag-button:hover, .dict-pag a.dict-pag-button:active {
+	background-color: #333;
+}
+.dict-pag .dict-pag-numbers .dict-pag-button {
+	background-color: #252525;
+}
+.dict-pag a.dict-pag-button {
+	color: #eee;
 }
 }
